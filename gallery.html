@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>T&P DEPT.....</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<style type="text/css">
+@import "gallery.css";
+
+.slideshow-container{
+width: 800px;
+position:center;
+margin: auto;
+position: cover;
+}
+.myslides{
+display: none;
+}
+.prev , .next{
+position: absolute;
+top: 50%;
+font-size: 18px;
+font-weight: bold;
+padding: 16px;
+margin-top: 100px;
+border-radius: 0 3px 3px 0;
+color: #5C5C5C;
+cursor: pointer;
+}
+.next{
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.prev:hover,.next:hover{
+background-color: rgba(0,0,0,0.8);
+}
+
+.dots{
+width: 13px;
+height: 13px;
+background: gray;
+display: inline-block;
+border-radius: 50%;
+cursor: pointer;
+}
+.fade{
+animation-name:fade;
+animation-duration:1.5s;
+}
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			
+			<img class="img-responsive" style="position:absolute;top:10px; left:60px" src="images/lololo.png" >
+					<img class="img-responsive" style="position:absolute;top:37px; left:560px" src="images/heading2.png" >
+</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+			<li ><a href="index.html">Home</a></li>
+			<li ><a href="placement.html">Placement</a></li>
+			<li ><a href="reg_form.html">Student</a></li>
+			<li class="current_page_item"><a href="gallery.html">T&p Gallery</a></li>
+			<li ><a href="admin_login.html">Admin Login</a></li>
+			<li ><a href="newcontact.html">Contact Us</a></li>
+		</ul>
+	</div>
+	
+	<div class="myslides fade">
+	<div id="banner"><img src="images/slider.jpg" width="1000" height="361" alt="" /></div>
+	<div id="welcome">
+		<h2 class="title"><a href="#">Welcome to HIET</a></h2>
+		<div class="entry">
+			<p>Our <strong>placement</strong> process begins from the IInd year for students enrolled in B.Tech. program and from Ist year for students enrolled in Master’s programs. We begin by grooming and preparing them for plaements. We strongly recommend our trained students to be professionally certified at the Prometric Testing center on campus before entering the corporate world in order to brighten their prospects for better job opportunities.</p></div>
+	     </div>
+    </div>
+    <div class="myslides fade">
+	<div id="banner"><img src="images/slider1.jpg" width="1000" height="361" alt="" /></div>
+	<div id="welcome">
+		<h2 class="title">Job Description:</h2>
+		<div class="entry">
+			<p>You will begin in an individual contributor’s role, working in a team of go-getters to help spread the Byju’s way of Learning in your city.
+You would be showcasing the unique Byju’s way of Learning to students and parents and will be responsible for mentoring and sales in your designated zone.
+Sector: Sales, Marketing, Business Development.</p>
+		</div>		
+	</div>
+    </div>
+    <div class="myslides fade">
+	<div id="banner"><img src="images/slider2.jpeg" width="1000" height="361" alt="" /></div>
+	
+    </div>
+    <div class="myslides fade">
+	<div id="banner"><img src="images/slider3.jpg" width="1000" height="361" alt="" /></div>
+	<div id="welcome">
+		<h2 class="title">INSPIRE SCIENCE CAMP :</h2>
+		<div class="entry">
+			<p>The form "INSPIRE SCIENCE CAMP, 17-21 June 2014" is no longer accepting responses.
+                Try contacting the owner of the form if you think this is a mistake.
+			</p>
+		</div>
+	  </div>
+    </div>
+    <div class="myslides fade">
+	<div id="banner"><img src="images/slider4.jpg" width="1000" height="361" alt="" /></div>
+    </div>
+	<div>
+ 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	
+	<div style="text-align:center">
+   <span class="dots" onclick="currentSlide(1)"></span> 
+   <span class="dots" onclick="currentSlide(2)"></span> 
+   <span class="dots" onclick="currentSlide(3)"></span> 
+   <span class="dots" onclick="currentSlide(4)"></span>
+   <span class="dots" onclick="currentSlide(5)"></span> 
+</div>
+</div>
+			</div>
+         	</div>
+		</div>
+	<!-- end #page --> 
+</div>
+<div id="footer">
+	<p>&copy; crossroad 2k18</p>
+</div>
+<!-- end #footer -->
+<!-- script part -->
+<script type="text/javascript">
+var slideIndex = 1;
+showSlide(slideIndex);
+function plusSlides(n){
+showSlide(slideIndex += n);
+}
+function currentSlide(n) {
+showSlide(slideIndex = n);
+}
+function showSlide(n){
+var i;
+var slides = document.getElementsByClassName("myslides");
+var dots = document.getElementsByClassName("dots");
+if (n > slides.length) { slideIndex = 1};
+if (n < 1) { slideIndex = slides.length};
+for (i=0;i<slides.length;i++) {
+slides[i].style.display = "none";
+};
+for (i=0;i<dots.length;i++) {
+dots[i].className = dots[i].className.replace(" active","");
+};
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+</body>
+</html>

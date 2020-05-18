@@ -1,0 +1,100 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>crossroad</title>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+<link href="reg_style.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+@import "gallery.css";
+
+	#ui{
+		background-color: #333;
+		padding: 30px;
+		margin-top: 30px;
+		border-radius: 10px;
+		opacity: 0.9;
+	}
+	#ui label,H1{
+		color: #fff;
+	}yt
+	
+</style>
+</head>
+
+<body>
+<div id="wrapper" style="display: block;
+    margin-left: auto;
+    margin-right: auto;">
+	<div id="header">
+		<div id="logo">
+			
+			<img class="img-responsive" style="position:absolute;top:10px; left:60px" src="images/lololo.png" >
+					<img class="img-responsive" style="position:absolute;top:37px; left:560px" src="images/heading2.png" >
+</div>
+	</div>
+    
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="reg_form1.html">Registration 1</a></li>
+			<li><a href="reg_form2.html">Registration 2</a></li>
+			<li><a href="reg_form3.html">Registration 3</a></li>
+			<li class="current_page_item"><a href="reg_form4.html">Registration 4</a></li>
+			<li class="last"><a href="admin_login.html">Admin Login</a></li>
+		</ul>
+	</div>
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3" id="form">
+			<div id="ui">
+			<form action="reg_entry4.php" method="post"><p style="font-size: 25px; color: white;"  align="center"><u>CROSSROAD-2018</u></p>
+				<div class="form-group">
+				<label>Name of Student:</label>
+				<input type="text" pattern="[A-Za-z ‘#\]{1,20}" name="name" class="form-control"  placeholder="Enter Name..." required> </div>
+
+				<div class="form-group">
+				<label>Guardian's Name:</label>
+				<input type="text" pattern="[0-9A-Za-z ‘#\.-]{1,50}" name="gname" class="form-control"  placeholder="Enter Guardian Name..." required=""> </div>
+				<div class="form-group">
+				<label>Contact No(Self):</label>
+				<input type="text" maxlength="10" min="10" pattern="\d{10}" name="pno1" class="form-control"  placeholder="Enter phone no..." required=""> </div>
+				<div class="form-group">
+				<label>Contact No(Gardian):</label>
+				<input type="text" maxlength="10" min="10" pattern="\d{10}" name="pno2" class="form-control"  placeholder="Enter phone no..." required> </div>
+				<div class="form-group">
+				<label>E-mail:</label>
+				<input type="email" name="email" class="form-control"  placeholder="Enter E-mail..." required> </div><hr>
+				
+				<center><input type="Submit" name="Submit" value="Submit" class="btn btn-primary"></center>
+				<hr>
+				
+				
+			</form>
+		</div>
+
+
+              
+		</div>
+	</div>
+	<br><br>
+
+	
+<div id="footer">
+	<p>&copy; crossroad 2k18</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
